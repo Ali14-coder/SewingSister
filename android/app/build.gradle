@@ -73,8 +73,8 @@ def enableProguardInReleaseBuilds = false
 def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
 
 project.ext.react = [
-    enableHermes: false,  // Add if not already set
-    reactNativeArchitectures: "armeabi-v7a"  // <-- Add this line
+    enableHermes: false, // Optional if you’re not using Hermes
+    reactNativeArchitectures: "armeabi-v7a"
 ]
 
 android {
